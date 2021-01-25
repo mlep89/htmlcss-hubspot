@@ -8,13 +8,13 @@
   <body>
     <!-- inizio menu fixed-->
     <header>
-      <div class="menu_fixed_container">
+      <div class="menu_fixed_container clearfix">
         <div class="menu_fixed">
           <div class="left_menu">
             <nav>
               <ul class="list">
-                <li><a href="#">English</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a  class="a_normal" href="#">English</a></li>
+                <li><a class="a_normal" href="#">Contact Us</a></li>
               </ul>
             </nav>
           </div>
@@ -31,7 +31,7 @@
      <!-- fine menu fixed-->
      <!-- inizio menu_container (menu_home + jumbotron)-->
       </div>
-      <div class="menu_container">
+      <div class="menu_container clearfix">
         <div class="menu_home">
           <div class="header_logo">
             <img src="img/logo.svg" alt="Logo HubSpot">
@@ -39,17 +39,19 @@
           <div class="header_menu">
              <nav>
                <ul class="list"=>
-                 <li><a class="arrow" href="#">Software</a></li>
-                 <li><a href="#">Pricing</a></li>
-                 <li><a href="#">Resources</a></li>
-                 <li><a href="#">Partners</a></li>
-                 <li><a href="#">About</a></li>
+                 <li><a class="a_normal" class="arrow" href="#">Software</a></li>
+                 <li><a class="a_normal" href="#">Pricing</a></li>
+                 <li><a class="a_normal" href="#">Resources</a></li>
+                 <li><a class="a_normal" href="#">Partners</a></li>
+                 <li><a class="a_normal" href="#">About</a></li>
                </ul>
              </nav>
           </div>
         </div>
         <!-- fine menu home-->
         <!-- inzio jumbotron-->
+      </div>
+      <div class="jumbotron_container">
         <div class="jumbotron">
           <div class="jumbotron_text">
             <h1>There's a better way to growth.</h1>
@@ -63,7 +65,139 @@
       <!-- fine menu_container (menu_home + jumbotron)-->
     </header>
     <!-- fine header-->
-    <br>
+
+    <!-- inizio main-->
+    <div class="light_blue_container"></div>
+
+    <!-- inizio features-->
+    <section class"features">
+      <div class="main_container">
+        <div class="main">
+          <img src="img/cube.png" class="cube" alt="">
+          <h2>Powerful Alone. Better Together </h2>
+          <p>HubSpot offers a full stack of software for marketing, sales, and customer service, with a completely free CRM at its core. They're powerful alone - but even better when used together.</p>
+        </div>
+        <div class="float_container clearfix">
+        <div class="first_col col">
+          <img class="col_img" src="img/computer.svg" alt="">
+          <h3>Free HubSport CRM</h3>
+          <p>Everything you need to organize, track, and build better relationships with leads and customers. Yes, it's 100% free. Forever.</p>
+          <hr>
+          <p class="popular">popular feature</p>
+          <ul class="list">
+            <li><span>&#10003;</span>Contact Insight</li>
+            <li><span>&#10003;</span>Deals</li>
+            <li><span>&#10003;</span>Task</li>
+          </ul>
+          <a class="btn" href="#">Learn More</a>
+        </div>
+
+          <div class="second_col col">
+            <img class="col_img" src="img/mountain.svg" alt="">
+            <h3>Marketing Hub</h3>
+            <p>Marketing software to help you grow traffic, convert more visitors, and run complete inbound marketing campaigns at scale.</p>
+            <hr>
+            <p class="popular">popular feature</p>
+            <ul class="list_col">
+              <li><span>&#10003;</span>Lead  Generation</li>
+              <li><span>&#10003;</span>Marketing Automations</li>
+              <li><span>&#10003;</span>Analitycs</li>
+            </ul>
+            <a class="btn" href="#">Learn More</a>
+          </div>
+          <div class="third_col col">
+            <img class="col_img" src="img/doc.svg" alt="">
+            <h3>Sales Hub</h3>
+            <p>Time saving sales software that helps you get deeper insights into prospects, automate the tasks you hate, and close more deals faster.</p>
+            <hr>
+            <p class="popular">popular feature</p>
+            <ul class="list_col">
+              <li><span>&#10003;</span>Email Tracking</li>
+              <li><span>&#10003;</span>Meeting Scheduling</li>
+              <li><span>&#10003;</span>Email Automation</li>
+            </ul>
+            <a class="btn" href="#">Learn More</a>
+          </div>
+          <div class="fourth_col col">
+            <img class="col_img" src="img/profile.svg" alt="">
+            <h3>Service Hub</h3>
+            <p>Customer service software to help you connect with customers, exceed expectations, and turn them into promoters that grow your business.</p>
+            <hr>
+            <p class="popular">popular feature</p>
+            <ul class="list_col">
+              <li><span>&#10003;</span>Tickets</li>
+              <li><span>&#10003;</span>Customer feedback</li>
+              <li><span>&#10003;</span>Knowledge Base</li>
+            </ul>
+            <a class="btn" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fine features-->
+
+    <!-- inizio learn&growth-->
+    <section class="learn_growth">
+      <div class="learn_container">
+        <div class="title">
+          <h2>Learn and grow with award-winning support and a thriving community behind you.</h2>
+          <p>You don't have to go it alone. Master the inbound methodology and get the most out of your tools with HubSpot's legendary customer support team and a community of thousands of marketing and sales pros just like you.</p>
+        </div>
+        <div class="table clearfix">
+          <div class="first_item item">
+            <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_agency.svg">
+            <h2>150+</h2>
+            <p>HubSpot user groups</p>
+          </div>
+          <div class="second_item item">
+            <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_blog.svg">
+            <h2>4.5M+</h2>
+            <p>Monthly visits</p>
+          </div>
+          <div class="third_item item">
+            <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_academy.svg">
+            <h2>155K+</h2>
+            <p>certified professionals</p>
+          </div>
+          <div class="fourth_item item">
+            <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_inbound.svg">
+            <h2>21K+</h2>
+            <p>registered attendees</p>
+          </div>
+          <div class="fifth_item item">
+            <img src="https://cdn2.hubspot.net/hubfs/53/HubSpot-App-Marketplace-White.png">
+            <h2>200+</h2>
+            <p>integrations</p>
+          </div>
+          <div class="sixth_item item">
+            <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_globe.svg" data-was-processed="true">
+            <h2>6+</h2>
+            <p>languages</p>
+          </div>
+          <div class="seventh_item item">
+            <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/parrotdad/homepage/homepage_community_followers.svg">
+            <h2>2.6M+</h2>
+            <p>social followers</p>
+          </div>
+          <div class="eighth_item item">
+            <img src="https://cdn2.hubspot.net/hubfs/53/Lists.svg">
+            <h2>5K+</h2>
+            <p>profiles and counting</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- fine learn&growth-->
+    <!-- inizio references-->
+
+
+    <!-- fine references-->
+
+    <!-- fine main-->
+
     <!-- inizio footer-->
     <footer>
       <div class="">
