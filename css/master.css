@@ -4,6 +4,136 @@
   box-sizing: border-box;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* inizio bottoni */
+.btn {
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: #ff7a59;
+  color: #fff;
+}
+.btn_white {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  color: #ff7a59;
+}
+/* fine bottoni */
+/* inizio list item */
+.list {
+  list-style: none;
+}
+.list li {
+  display: inline;
+  padding: 0 10px;
+}
+/* fine list item */
+
+/* inizio header */
+
+/* inizio menu fixed */
+.menu_fixed_container {
+  width: 100%;
+  height: 100px;
+  background-color: green;
+}
+.menu_fixed {
+  width: 80%;
+  margin: 0 auto;
+  background-color: red;
+}
+.menu_fixed a {
+  text-decoration: none;
+}
+
+.menu_fixed .left_menu,
+.menu_fixed .right_menu {
+  float: left;
+}
+.menu_fixed .left_menu {
+  width: 50%;
+}
+.menu_fixed .right_menu {
+  width: 50%;
+  text-align: right;
+}
+/* fine menu fixed */
+
+/* inizio menu first page */
+.menu_container {
+  width: 100%;
+  height: 500px;
+  background-color: yellow;
+}
+.menu_home {
+  width: 80%;
+  margin: 0 auto;
+  height: 100px;
+  background-color: blue;
+}
+.menu_home a {
+  text-decoration: none;
+}
+.left_menu,
+.right_menu {
+  padding-top: 50px;
+}
+
+.menu_home .header_logo,
+.menu_home .header_menu {
+  float: left;
+}
+.header_logo,
+.header_menu {
+  padding-top: 50px;
+}
+.menu_home .header_logo {
+  width: 50%;
+}
+.menu_home .header_menu {
+  width: 50%;
+  text-align: right;
+}
+/* fine menu first page */
+
+/* inizio jumbotron */
+.jumbotron {
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
+  background-color: pink;
+  padding-top: 40px;
+}
+.arrow::after {
+  content: '\E003';
+  display: inline-block;
+  position: relative;
+  font-family: 'hsg-icons';
+  margin: 2px;
+}
+
+.jumbotron a {
+  display: inline-block;
+  text-decoration: none;
+}
+.jumbotron_text {
+  width: 50%;
+}
+
+.jumbotron h1,
+.jumbotron a,
+.jumbotron p {
+  margin-top: 20px;
+}
+
+/* fine header */
+
 <!-- definire tramite una classe il modello di box da utilizzare sia in verticale che in orrizontale-->
 
 <!-- definizione modello quadrato con proprietà float -->
