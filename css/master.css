@@ -16,6 +16,7 @@
   border-radius: 5px;
   background-color: #ff7a59;
   color: #fff;
+  text-decoration: none;
 }
 .btn_white {
   padding: 10px 10px;
@@ -25,8 +26,6 @@
   color: #ff7a59;
 }
 
-.col > .btn {
-  text-decoration: none;
 }
 /* fine bottoni */
 /* inizio list item */
@@ -279,8 +278,8 @@
   padding: 40px;
 }
 .item img {
-  width: 190px;
-  height: 80px;
+  width: 140px;
+  height: 50px;
 }
 
 .first_item,
@@ -297,8 +296,66 @@
 .eighth_item {
   border-left: 0.5px solid white;
 }
-
 /* fine section learn&growth */
+/* inizio section references */
+.references_container {
+  background-image: url(../img/woman.webp);
+  background-repeat: no-repeat;
+  background-size: 350px 420px;
+  background-position: bottom right;
+  width: 100%;
+}
+.references_main {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.text {
+  float: left;
+  width: 40%;
+  padding: 40px;
+}
+.logos {
+  float: left;
+  width: 60%;
+  padding: 40px;
+}
+.button {
+  float: left;
+  width: 40%;
+  height: 400px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.text ul {
+  list-style: none;
+  padding-top: 20px;
+}
+
+
+.logo_1,
+.logo_2,
+.logo_3,
+.logo_4,
+.logo_5,
+.logo_6,
+.logo_7,
+.logo_8 {
+  float: left;
+  width: 25%;
+  display: inline;
+  padding-top: 20px;
+}
+.img_logo {
+  width: 140px;
+  height: 50px;
+}
+
+.button p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /* fine main */
 
