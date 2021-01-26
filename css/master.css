@@ -26,7 +26,20 @@
   color: #ff7a59;
 }
 
+/* inizio freccie */
+.arrow {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 10px;
 }
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+/* fine freccie */
+
 /* fine bottoni */
 /* inizio list item */
 .list {
@@ -41,6 +54,14 @@
   color: black;
 }
 
+.list_first_col {
+  list-style: none;
+}
+.list_first_col li {
+  display: inline;
+  padding-top: 10px;
+  padding-right: 10px;
+}
 .list_col {
   list-style: none;
   padding: 20px; 0;
@@ -49,7 +70,9 @@
 .list_col a {
   margin: 20px; 0;
 }
-.list_col li span {
+.list_col li span,
+.list span,
+.list_first_col li span {
   color: #fff;
   background-color: #ff7a59;
   border-radius: 50%;
@@ -57,20 +80,16 @@
   text-align: center;
   font-size: 10px;
 }
-.list span {
-  color: #fff;
-  background-color: #ff7a59;
-  border-radius: 50%;
-  margin-right: 10px;
-  text-align: center;
-  font-size: 10px;
-}
+
 /* fine list item */
 
 /* inizio header */
 
 /* inizio menu fixed */
 .menu_fixed_container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 100px;
   background-color: #a7c5df;
@@ -144,14 +163,6 @@
   height: 400px;
   padding-top: 40px;
 }
-.arrow::after {
-  content: '\E003';
-  display: inline-block;
-  position: relative;
-  font-family: 'hsg-icons';
-  margin: 2px;
-}
-
 .jumbotron a {
   display: inline-block;
   text-decoration: none;
@@ -201,7 +212,6 @@
 .cube {
   width: 150px;
   height: 148px;
-
 }
 
 .float_container {
@@ -219,6 +229,28 @@
 .first_col {
   width: 100%;
   margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 5px #888888;
+}
+.col:hover,
+.first_col:hover {
+  box-shadow: 0 0 15px #888888;
+}
+
+.left {
+  float:left;
+  width: 40%;
+  padding-bottom: 40px;
+  padding-left: 80px;
+}
+.left img {
+  display: block;
+}
+.right {
+  float: right;
+  display: inline-block;
+  width: 60%;
+  padding-top: 20px;
 }
 
 .second_col,
@@ -299,16 +331,13 @@
 /* fine section learn&growth */
 /* inizio section references */
 .references_container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
   background-image: url(../img/woman.webp);
   background-repeat: no-repeat;
   background-size: 350px 420px;
   background-position: bottom right;
-  width: 100%;
-}
-.references_main {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 40px;
 }
 .text {
   float: left;
@@ -332,6 +361,13 @@
   list-style: none;
   padding-top: 20px;
 }
+.text h2 {
+  font-weight:bolder;
+  font-size: 60px;
+}
+.text span {
+  font-weight: bold;
+}
 
 
 .logo_1,
@@ -351,16 +387,121 @@
   width: 140px;
   height: 50px;
 }
-
+.logo_wwf {
+  width: 100px;
+  height: 50px;
+}
+.logo_sc {
+  width: 140px;
+  height: 40px;
+}
 .button p {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
+#help_btn {
+  color: #2d3e50;
+  background-color: #cbd6e2;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  padding: 10px 5px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+/* fine section references */
 /* fine main */
 
-<!-- definire tramite una classe il modello di box da utilizzare sia in verticale che in orrizontale-->
+/* inizio footer */
+footer {
+  width: 100%;
+  height: 600px;
+  background-color: #2d3e50;
+  color: #cbd6e2;
+}
+.footer_container {
+  width: 80%;
+  margin: 0 auto;
+}
 
-<!-- definizione modello quadrato con proprietà float -->
+.footer_1,
+.footer_2,
+.footer_3,
+.footer_4 {
+  float: left;
+  display: inline-block;
+  margin-top: 30px;
+  width: 25%;
+  line-height: 200%;
+}
+.footer_4 ul {
+  margin-bottom: 30px;
+}
+/* inizio common attributes */
+.common_attributes {
+  list-style: none;
+}
+.common_attributes a,
+.languages a {
+  text-decoration: none;
+  font-weight: lighter;
+  color: #cbd6e2;
+}
+#title_attribute {
+  font-weight: bold;
+  line-height: 10px;
+  color: white;
+}
+/* fine common attributes */
 
-<!-- definizione modello ul per footer -->
+.languages {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.languages ul {
+  list-style: none;
+}
+.languages ul li {
+  display: inline;
+  padding: 10px;
+}
+
+.hr_footer {
+  color: #cbd6e2;
+  font-weight: bolder;
+}
+
+.logo_footer,
+.note {
+  float: left;
+  width: 50%;
+  margin-top: 30px;
+}
+.note {
+  text-align: right;
+}
+.note ul,
+.social ul {
+  list-style: none;
+}
+.note li,
+.social li {
+  text-decoration: none;
+  display: inline;
+}
+.social a {
+  color: #cbd6e2;
+  padding-right: 25px;
+}
+
+.social {
+  margin-top: 10px;
+}
+
+.logo_footer img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}

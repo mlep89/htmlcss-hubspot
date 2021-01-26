@@ -3,17 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HubSpor Inbound Marketing, Sales and Service Software</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
     <!-- inizio menu fixed-->
-    <header>
+<!-- IDEA:<header> devo eliminare dal flusso il tag semantico header perché altrimenti il menu non scrolla oltre l'header stesso  -->
       <div class="menu_fixed_container clearfix">
         <div class="menu_fixed">
           <div class="left_menu">
             <nav>
               <ul class="list">
-                <li><a  class="a_normal" href="#">English</a></li>
+                <li><a  class="a_normal" href="#"><span class="glyphicon glyphicon-globe"></span>English</a><i class="arrow down"></i></li>
                 <li><a class="a_normal" href="#">Contact Us</a></li>
               </ul>
             </nav>
@@ -27,10 +29,10 @@
              </ul>
             </nav>
           </div>
+        </div>
       </div>
      <!-- fine menu fixed-->
      <!-- inizio menu_container (menu_home + jumbotron)-->
-      </div>
       <div class="menu_container clearfix">
         <div class="menu_home">
           <div class="header_logo">
@@ -39,11 +41,11 @@
           <div class="header_menu">
              <nav>
                <ul class="list"=>
-                 <li><a class="a_normal" class="arrow" href="#">Software</a></li>
+                 <li><a class="a_normal" class="arrow" href="#">Software</a><i class="arrow down"></i></li>
                  <li><a class="a_normal" href="#">Pricing</a></li>
-                 <li><a class="a_normal" href="#">Resources</a></li>
-                 <li><a class="a_normal" href="#">Partners</a></li>
-                 <li><a class="a_normal" href="#">About</a></li>
+                 <li><a class="a_normal" href="#">Resources</a><i class="arrow down"></i></li>
+                 <li><a class="a_normal" href="#">Partners</a><i class="arrow down"></i></li>
+                 <li><a class="a_normal" href="#">About</a><i class="arrow down"></i></li>
                </ul>
              </nav>
           </div>
@@ -63,7 +65,7 @@
       </div>
       <!-- fine jumbotron-->
       <!-- fine menu_container (menu_home + jumbotron)-->
-    </header>
+<!-- IDEA:</header>  devo eliminare dal flusso il tag semantico header perché altrimenti il menu non scrolla oltre l'header stesso-->
     <!-- fine header-->
 
     <!-- inizio main-->
@@ -78,18 +80,22 @@
           <p>HubSpot offers a full stack of software for marketing, sales, and customer service, with a completely free CRM at its core. They're powerful alone - but even better when used together.</p>
         </div>
         <div class="float_container clearfix">
-        <div class="first_col col">
-          <img class="col_img" src="img/computer.svg" alt="">
-          <h3>Free HubSport CRM</h3>
-          <p>Everything you need to organize, track, and build better relationships with leads and customers. Yes, it's 100% free. Forever.</p>
-          <hr>
-          <p class="popular">popular feature</p>
-          <ul class="list">
-            <li><span>&#10003;</span>Contact Insight</li>
-            <li><span>&#10003;</span>Deals</li>
-            <li><span>&#10003;</span>Task</li>
-          </ul>
-          <a class="btn" href="#">Learn More</a>
+        <div class="first_col clearfix">
+            <div class="left">
+              <img class="col_img" src="img/computer.svg" alt="">
+              <a class="btn" href="#">Learn More</a>
+            </div>
+            <div class="right">
+              <h3>Free HubSport CRM</h3>
+              <p>Everything you need to organize, track, and build better relationships with leads and customers. Yes, it's 100% free. Forever.</p>
+                  <p class="popular">popular feature</p>
+
+              <ul class="list_first_col">
+                <li><span>&#10003;</span>Contact Insight</li>
+                <li><span>&#10003;</span>Deals</li>
+                <li><span>&#10003;</span>Task</li>
+              </ul>
+            </div>
         </div>
 
           <div class="second_col col">
@@ -194,7 +200,6 @@
     <!-- inizio references-->
     <section>
       <div class="references_container clearfix">
-        <div class="references_main">
           <div class="text">
             <h2>64,500</h2>
             <ul>
@@ -204,12 +209,12 @@
             </ul>
           </div>
           <div class="logos">
-            <div class="logo_1"><img class="img_logo" src="https://f.hubspotusercontent00.net/hubfs/53/1200px-WWF_logo_svg%20(1).png"></div>
+            <div class="logo_1"><img class="logo_wwf" src="https://f.hubspotusercontent00.net/hubfs/53/1200px-WWF_logo_svg%20(1).png"></div>
             <div class="logo_2"><img class="img_logo" src="https://f.hubspotusercontent00.net/hubfs/53/trello-logo-blue%20(1).png"></div>
             <div class="logo_3"><img class="img_logo" src="https://f.hubspotusercontent00.net/hubfs/53/1200px-G2_Crowd_logo.svg.png"></div>
             <div class="logo_4"><img class="img_logo" src="https://www.hubspot.com/hubfs/assets/hubspot.com/homepage/Vertical_Sabaeus_RGB.svg"></div>
             <div class="logo_5"><img class="img_logo" src="https://www.hubspot.com/hubfs/assets/hubspot.com/home/home_page_logos_June_2019/Subaru_Logo_v2_186x63@2x.png"></div>
-            <div class="logo_6"><img class="img_logo" src="https://f.hubspotusercontent00.net/hubfs/53/soundcloud.png"></div>
+            <div class="logo_6"><img class="logo_sc" src="https://f.hubspotusercontent00.net/hubfs/53/soundcloud.png"></div>
             <div class="logo_7"><img class="img_logo" src="https://www.hubspot.com/hubfs/assets/hubspot.com/home/home_page_logos_June_2019/Classpass-logo@2x.png"></div>
             <div class="logo_8"><img class="img_logo" src="https://www.hubspot.com/hubfs/assets/hubspot.com/home/home_page_logos_June_2019/VMware_logo_gry_RGB_300dpi@2x.png"></div>
           </div>
@@ -217,9 +222,8 @@
             <h2>Start Growing With HubSpot Today</h2>
             <p>With tools to make every part of your process more human and a support team excited to help you, getting started with inbound has never been easier.</p>
             <a class="btn" href="#">GetHubSpotFree</a>
-            <p>Get started with FREE tools, or get mre with our premium software.</p>
+            <p>Get started with FREE tools, or get more with our premium software.</p>
           </div>
-        </div>
       </div>
     </section>
     <!-- fine references-->
@@ -228,159 +232,93 @@
 
     <!-- inizio footer-->
     <footer>
-      <div class="">
-        <!-- div container-->
-        <nav>
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
-          <!-- menu di navigazione-->
-        </nav>
-        <div class="">
+      <div class="footer_container">
+        <div class="footer_1">
           <nav>
-            <!-- jumbotron + bottone-->
+            <ul class="common_attributes">
+              <li><a id="title_attribute" href="#">Increase Your Traffic</a></li>
+              <li><a href="#">Ad Software</a></li>
+              <li><a href="#">Blog Software</a></li>
+              <li><a href="#">SEO Software</a></li>
+              <li><a href="#">Social Media Software</a></li>
+              <li><a href="#">Content Management System</a></li>
+            </ul>
           </nav>
+        </div>
+        <div class="footer_2">
+          <nav>
+            <ul class="common_attributes">
+              <li><a id="title_attribute" href="#">Connect with Leads</a></li>
+              <li><a href="#">Find New Prospects</a></li>
+              <li><a href="#">Email Tracking</a></li>
+              <li><a href="#">Sales Email Templates</a></li>
+              <li><a href="#">Click to Call Your Leads</a></li>
+              <li><a href="#">Email Marketing</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer_3">
+          <nav>
+            <ul class="common_attributes">
+              <li><a id="title_attribute" href="#">Close and Manage Leads</a></li>
+              <li><a href="#">Document Tracking Tool</a></li>
+              <li><a href="#">Meeting Schedule Tool</a></li>
+              <li><a href="#">Sales Automation Tool</a></li>
+              <li><a href="#">Lead Management Tool</a></li>
+              <li><a href="#">Pipeline Management Tool</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer_4">
+          <nav>
+            <ul class="common_attributes">
+              <li><a id="title_attribute" href="#">Support and Tools</a></li>
+              <li><a href="#">HubSpot Partners</a></li>
+              <li><a href="#">Join a local User Group</a></li>
+              <li><a href="#">Get a FREE Website Report</a></li>
+              <li><a href="#">HubSpot Templates</a></li>
+              <li><a href="#">Free Tools & Generators</a></li>
+            </ul>
+          </nav>
+          <a id="help_btn" href="#">Contact HubSpot Suppport</a>
+          <div class="social">
+            <ul>
+              <li><a href="https://www.facebook.com/hubspot"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/hubspot"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.youtube.com/user/HubSpot"><i class="fa fa-youtube-play"></i></a></li>
+              <li><a href="https://www.twitter.com/HubSpot"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/hubspot"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="languages">
+          <ul>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Deutsch</a></li>
+            <li><a href="#">中文</a></li>
+            <li><a href="#">Español</a></li>
+            <li><a href="#">Português</a></li>
+            <li><a href="#">Français</a></li>
+          </ul>
+        </div>
+        <hr class="hr_footer">
+        <div class="credits clearfix">
+          <div class="logo_footer">
+            <img src="img/logo.svg" alt="">
+            <p>Copyright 2019 HubSpot, Inc.</p>
+          </div>
+          <div class="note">
+            <ul>
+              <li>Legal Stuff</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </footer>
 
     <!-- fine footer-->
-
-
-    <!-- inizio main-->
-    <main>
-
-      <!-- inizio sezione features disponibili-->
-      <section>
-        <div class="">
-          <!-- div container con background color celeste-->
-          <div class="">
-            <!-- div sub_container per definire 80% width e altri elementi comuni agli altri blocchi -->
-            <div class="">
-              <!-- quadrato + titolo + testo-->
-            </div>
-            <div class="">
-              <!-- box orizzontale-->
-            </div>
-            <div class="">
-              <!-- box verticale n.1-->
-            </div>
-            <div class="">
-              <!-- box verticale n.2-->
-            </div>
-            <div class="">
-              <!-- box verticale n.3-->
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- fine sezione features disponibili-->
-
-
-      <!-- inizio sezione learn & growth-->
-      <section>
-        <div class="">
-          <!-- div container per definire 80% width e altri elementi comuni agli altri blocchi-->
-        </div>
-        <div class="">
-          <!-- titolo + testo-->
-        </div>
-        <div class="">
-          <!-- quadrato n.1 (da utilizzare float)-->
-        </div>
-        <div class="">
-          <!-- quadrato n.2 (da utilizzare float)-->
-        </div>
-        <div class="">
-          <!-- quadrato n.3 (da utilizzare float)-->
-        </div>
-        <div class="">
-          <!-- quadrato n.4 (da utilizzare float)-->
-        </div>
-        <div class="">
-          <!-- quadrato n.5 (da utilizzare float)-->
-        </div>
-        <div class="">
-          <!-- quadrato n.6 (da utilizzare float)-->
-        </div>
-      </section>
-      <!-- fine sezione learn & growth-->
-
-
-      <!-- inizio sezione brand-->
-      <section>
-        <div class="">
-          <!-- div container per definire 80% width + img donna in background -->
-        </div>
-              <div class="">
-              <!-- counter + testo -->
-              </div>
-              <div class="">
-              <!-- logo n.1 (da utilizzare float)-->
-              </div>
-              <div class="">
-              <!-- logo n.2 (da utilizzare float)-->
-              </div>
-              <div class="">
-              <!-- logo n.3 (da utilizzare float)-->
-              </div>
-              <div class="">
-              <!-- logo n.4 (da utilizzare float)-->
-              </div>
-              <div class="">
-              <!-- logo n.5 (da utilizzare float)-->
-              </div>
-              <div class="">
-              <!-- logo n.6 (da utilizzare float)-->
-              </div>
-              <div class="">
-              <!-- logo n.7 (da utilizzare float)-->
-              </div>
-              <div class="">
-              <!-- logo n.8 (da utilizzare float)-->
-
-              <div class="">
-                <!-- testo + bottone-->
-              </div>
-        </div>
-      </section>
-      <!-- fine sezione brand-->
-
-    </main>
-    <!-- fine main-->
-
-
-    <!-- inizio footer-->
-    <footer>
-
-      <div class="">
-        <!-- ul n.1-->
-      </div>
-      <div class="">
-        <!-- ul n.2-->
-      </div>
-      <div class="">
-        <!-- ul n.3-->
-      </div>
-      <div class="">
-        <!-- ul n.4-->
-      </div>
-      <div class="">
-        <!-- linuge + hr -->
-      </div>
-      <div class="">
-        <!-- logo & copyright -->
-      </div>
-      <div class="">
-        <!-- credits -->
-      </div>
-
-    </footer>
-    <!-- fine footer -->
-
   </body>
 </html>
